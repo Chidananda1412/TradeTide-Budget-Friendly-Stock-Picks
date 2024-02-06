@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Suggestor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Price Suggestor</h1>
+        <form>
+            <label for="budget">Enter your budget in Rupees: </label>
+            <input type="number" id="budget" min="1">
+            <label for="selectedCompany">Select a company: </label>
+            <select id="selectedCompany">
+                <option value="AAPL">Apple Inc.</option>
+                <option value="GOOGL">Alphabet Inc. (Google)</option>
+                <option value="MSFT">Microsoft Corporation</option>
+                <option value="AMZN">Amazon.com Inc.</option>
+                <option value="TSLA">Tesla Inc.</option>
+                <option value="FB">Facebook Inc.</option>
+                <option value="NVDA">NVIDIA Corporation</option>
+                <option value="AMD">Advanced Micro Devices, Inc.</option>
+                <option value="NFLX">Netflix Inc.</option>
+                <option value="PYPL">PayPal Holdings, Inc.</option>
+                <option value="V">Visa Inc.</option>
+                <option value="MA">Mastercard Incorporated</option>
+                <option value="DIS">The Walt Disney Company</option>
+                <option value="INTC">Intel Corporation</option>
+                <option value="CSCO">Cisco Systems, Inc.</option>
+                <option value="IBM">International Business Machines Corporation (IBM)</option>
+                <option value="GS">The Goldman Sachs Group, Inc.</option>
+                <option value="WMT">Walmart Inc.</option>
+                <option value="JPM">JPMorgan Chase & Co.</option>
+            </select>
+            <button class="btn" type="button" onclick="suggestStock()">Suggest Stock</button>
+        </form>
+        <div class="output">
+            <h2>Suggested Stocks:</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="suggestor.js"></script>
+</body>
+</html>
